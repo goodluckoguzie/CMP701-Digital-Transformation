@@ -4,7 +4,7 @@
 
 ### 1. What’s Digital Transformation & Strategy?
 
-Strategy is your game plan to win at something — whether it’s running a business, a nonprofit, or even planning a party. It’s the “how” behind reaching your goals.
+Strategy is your game plan to win at something  whether it’s running a business, a nonprofit, or even planning a party. It’s the “how” behind reaching your goals.
 
 Digital transformation is about using tech — think websites, apps, social media, or AI — to make your plan bigger, better, or totally new.
 
@@ -141,8 +141,4 @@ Digital can make physical visits even better.
 - Use data analytics to understand what visitors want.  
 - Master tools like virtual reality or content management systems.
 
-## Wrapping It Up
 
-Digital transformation isn’t just about tech — it’s about using tools like websites, apps, or AI to make an organization like Tate more accessible, engaging, and impactful. For a nonprofit like Tate, it’s about sharing art with the world in new ways while keeping the mission alive.
-
-If you want these answers in essay form, as slides, or with more examples, just let me know!
