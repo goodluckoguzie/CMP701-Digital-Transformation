@@ -6,7 +6,7 @@
 
 Strategy is your game plan to win at something  whether it’s running a business, a nonprofit, or even planning a party. It’s the “how” behind reaching your goals.
 
-Digital transformation is about using tech — think websites, apps, social media, or AI — to make your plan bigger, better, or totally new.
+Digital transformation is about using tech  think websites, apps, social media, or AI — to make your plan bigger, better, or totally new.
 
 **Example**:  
 - **Old-school bookstore**: Sells books in a physical shop.  
