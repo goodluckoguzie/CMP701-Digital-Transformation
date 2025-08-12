@@ -1,6 +1,6 @@
 # Digital Transformation Strategy Workshop: Tesla & Airbnb
 
-In this tutorial, you will learn how to develop a digital transformation strategy for two companies – Tesla and Airbnb – through a fun classroom activity. We’ll go step-by-step, using group discussions, mind mapping, and focused group discussions to explore ideas. The language and examples are kept simple so a 15-year-old can follow along. Let’s get started!
+In this tutorial, you will learn how to develop a digital transformation strategy for two companies – Tesla and Airbnb – through a fun classroom activity. We’ll go step-by-step, using group discussions, mind mapping, and focused group discussions to explore ideas. 
 
 ## Part 1: Group Discussion and Brainstorming
 
@@ -8,7 +8,7 @@ Goal: Form a group, discuss the companies’ current digital maturity, and brain
 
 ### Forming Your Group & Starting the Discussion
 
-- Form a Small Team: Gather in groups of 3-5 classmates. Choose a team name if you like (e.g., "Team Tesla" or "Team Airbnb") to make it fun. Make sure everyone is comfortable and ready to speak up.
+- Form a Small Team: Gather in groups of 3-5 classmates. Choose a team name if you like (e.g., "Team Tesla" or "Team Airbnb") to make it fun.
 - Set Ground Rules: Agree to listen to each other and respect all ideas. For example, one person speaks at a time, and others listen without interrupting [tll.mit.edu](https://tll.mit.edu). It’s okay to disagree, but criticize ideas, not people [tll.mit.edu](https://tll.mit.edu).
 - Pick Roles (Optional): You might assign a note-taker to write down ideas and a moderator to keep the discussion on track. Roles can help, but they aren’t required – the main point is everyone should participate actively.
 
@@ -146,11 +146,11 @@ Below are illustrative mind map examples for Tesla and Airbnb. These show how yo
 
 Example mind map for Tesla’s digital transformation strategy. The central node is “Tesla Digital Strategy” with four main branches: Current State, Goals, Technologies, and Challenges. Under Current State, the example shows Tesla’s connected cars (with over-the-air updates) and automated factories. The Goals branch lists objectives like full self-driving cars, faster production, and better customer experience. The Technologies branch includes AI & Machine Learning, IoT sensors & data usage, and mobile apps & connectivity. The Challenges branch highlights issues such as regulations & safety, cybersecurity risks, high R&D costs, and finding tech talent. This visual layout helps to see all key aspects at a glance.
 
-![Tesla Mind Map](https://your-github-repo-link/tesla_mind_map.png)  <!-- Placeholder for the first image; replace with actual GitHub link -->
+![Tesla’s Digital Transformation Strategy](images/Tesla’s_digital_transformation_strategy.png)
 
 Example mind map for Airbnb’s digital transformation strategy. The central idea “Airbnb Digital Strategy” connects to four main topics: Current State, Goals, Technologies, and Challenges. In Current State, the map notes that Airbnb is a global online platform with data-driven recommendations. The Goals branch includes building trust & safety, offering personalized experiences, and global expansion. Under Technologies, it shows AI for recommendations, VR/AR tours, and cloud & data analytics as tools Airbnb can use. For Challenges, it lists rental regulations, user safety, competition (hotels), and data privacy. The mind map format makes it easy to see how Airbnb’s current digital state leads into its goals, what tech can help, and what hurdles exist.
 
-![Airbnb Mind Map](https://your-github-repo-link/airbnb_mind_map.png)  <!-- Placeholder for the second image; replace with actual GitHub link -->
+![Airbnb’s Digital Transformation Strategy](images/Airbnb’s_digital_transformation_strategy.png)
 
 How to use these examples: You can copy some of these points into your own Miro mind maps if you’re stuck, or just use them to check if your ideas cover similar ground. Remember, your group might have unique ideas too – feel free to include them. The key is that your mind map should clearly communicate where the company is now, where it wants to go, how it can get there (tech), and what might stand in the way. By the end of this step, you should have two completed mind maps (one for Tesla, one for Airbnb). Congrats! 🎉 You’ve taken a bunch of sticky note ideas and organized them into a strategic plan format. Now it’s time for Part 3, where you will present your mind maps and get feedback.
 
@@ -160,7 +160,6 @@ Goal: Present your team’s mind maps to the class and engage in a focused discu
 
 ### Presenting the Mind Map to the Class
 
-Presenting might feel scary, but here are steps to do it smoothly:
 
 - Team Preparation: Before class presentation, quickly decide who will talk about which part of the mind map. For example, one member can explain Current State, another covers Goals, etc. Practice once as a group so you know the order.
 - Show the Mind Map: When it’s your turn, display your mind map to the class. If you’re in a physical classroom, you might use a projector or simply hold up a poster. In an online class, share your screen with the Miro board.
@@ -170,17 +169,13 @@ Presenting might feel scary, but here are steps to do it smoothly:
 
 ### Giving and Receiving Feedback
 
-After each presentation, the class (and teacher) will discuss it. This is the focused group discussion stage. Here’s how to handle feedback:
+After each presentation, the class  will discuss it. This is the focused group discussion stage. Here’s how to handle feedback:
 
-- Listening to Feedback: When you finish presenting, invite the class to ask questions or give suggestions. Listen respectfully to each comment. Do not interrupt someone giving feedback, even if you disagree – let them finish. Take notes of key points others mention.
+- Listening to Feedback: When you finish presenting, invite the class to ask questions or give suggestions. 
 - Typical Feedback Questions: Your classmates or teacher might ask things like, “Why did you choose that goal?” or “Have you thought about another challenge?” Don’t worry – these aren’t criticisms, they’re to help you think deeper. Answer as best as you can. If you don’t know, it’s okay to say, “That’s a good point – we hadn’t thought of that.”
 - Responding Calmly: If someone misunderstood your idea, calmly clarify it. For example, “I think I wasn’t clear – what I meant was that Airbnb could use VR for tours, not that it’s doing it yet.” Always thank people for their feedback.
 - Giving Feedback to Others: When other teams present, you should also participate. Practice positive feedback first – mention what you liked or found clever about their mind map. Then you can ask a polite question or suggest an idea: “I wonder if Tesla might have another challenge with supply chains – what do you think?”. Be constructive and kind. Remember, the goal is to help each other improve, not to “win.”
 
-Tips for Good Feedback:
-
-- Be Kind and Specific: Instead of saying “This is bad” (not helpful), say “Maybe you could add something about cybersecurity under challenges for Tesla, since it’s an important issue.”
-- Focus on Ideas: Keep the discussion about the strategy ideas, not how the poster looks or someone’s speaking style. For example, discuss Tesla’s tech ideas, not “John’s handwriting on the poster.”
 
 ### Reflecting and Improving the Strategy
 
@@ -201,5 +196,3 @@ In this activity, you went from brainstorming wild ideas on sticky notes to pres
 - Tesla is already high-tech (smart cars, automated factories) but still pursues ambitious goals like self-driving and needs to tackle challenges like regulation and security.
 - Airbnb thrives on digital platforms and data, aiming to make travel personalized and trust-rich, while navigating challenges like laws and safety.
 - Teamwork and feedback are key. Great ideas often come from brainstorming together and iterating on feedback.
-
-We hope you found this tutorial easy to follow. You should now be able to reproduce a similar strategy development process for any organization: just remember to discuss, organize (mind map), and refine (feedback). Good luck with your presentation, and have fun transforming ideas into strategy! 🚀
