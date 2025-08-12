@@ -146,7 +146,7 @@ Below are illustrative mind map examples for Tesla and Airbnb. These show how yo
 
 Example mind map for Tesla’s digital transformation strategy. The central node is “Tesla Digital Strategy” with four main branches: Current State, Goals, Technologies, and Challenges. Under Current State, the example shows Tesla’s connected cars (with over-the-air updates) and automated factories. The Goals branch lists objectives like full self-driving cars, faster production, and better customer experience. The Technologies branch includes AI & Machine Learning, IoT sensors & data usage, and mobile apps & connectivity. The Challenges branch highlights issues such as regulations & safety, cybersecurity risks, high R&D costs, and finding tech talent. This visual layout helps to see all key aspects at a glance.
 
-![Tesla’s Digital Transformation Strategy](images/Tesla’s_digital_transformation_strategy.png)
+<img src="images/Airbnb’s_digital_transformation_strategy.png" alt="Airbnb" style="width:50%;">
 
 Example mind map for Airbnb’s digital transformation strategy. The central idea “Airbnb Digital Strategy” connects to four main topics: Current State, Goals, Technologies, and Challenges. In Current State, the map notes that Airbnb is a global online platform with data-driven recommendations. The Goals branch includes building trust & safety, offering personalized experiences, and global expansion. Under Technologies, it shows AI for recommendations, VR/AR tours, and cloud & data analytics as tools Airbnb can use. For Challenges, it lists rental regulations, user safety, competition (hotels), and data privacy. The mind map format makes it easy to see how Airbnb’s current digital state leads into its goals, what tech can help, and what hurdles exist.
 
