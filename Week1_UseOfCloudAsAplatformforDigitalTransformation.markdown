@@ -1,100 +1,86 @@
-# Using the Azure Pricing Calculator for Virtual Machine Cost Estimation
+# Week 1: Use of Cloud as a Platform for Digital Transformation
 
-## Quick Introduction
-Azure is a cloud platform where you can rent computing power and storage, like borrowing a supercomputer from Microsoft, and the Azure Pricing Calculator helps estimate the cost of that rental.
+## Overview
+This markdown provides a clear, step-by-step guide to completing the lab exercise for CMP701 – Lab 01. It focuses on using the Azure Pricing Calculator to estimate costs for the N-tier application described in the lab manual. We'll explain the tiers, guide you through the calculation process for both the Web Tier and Business Tier, and provide estimated costs based on current pricing (as of September 2025). Remember, actual prices may vary slightly—always use the calculator for your submission and export to Excel as required.
 
-## Step-by-Step: How to Get a VM Cost
+## Understanding the N-Tier Application Tiers
+The lab describes a Windows N-tier application on Azure, which is a common architecture for scalable apps (e.g., a food delivery app). It separates concerns into layers (tiers) for better maintainability, security, and performance. Here's a simple explanation of each tier mentioned in the diagram:
+
+- **Web Tier**: This is the front-end layer that handles user interactions. It receives requests from clients (e.g., browsers or mobile apps), serves web pages or APIs, and passes requests to the Business Tier. In the diagram, it shows two VMs behind a load balancer for redundancy and scalability. These VMs run web servers (e.g., IIS or Apache) and are typically lightweight.
+
+- **Business Tier**: This middle layer contains the application logic. It processes business rules, performs calculations, and coordinates between the Web Tier and Data Tier. The lab provides a table with four VMs (VM1–VM4), each with specific CPU, RAM, disk, and OS configurations. These handle tasks like order processing or user authentication.
+
+- **Data Tier**: This back-end layer stores and manages data (e.g., databases like SQL Server). It ensures data persistence, queries, and integrity. The diagram shows a SQL Server VM or instance.
+
+- **Jump Box**: A secure intermediary server (bastion host) used to access other resources in the network without exposing them directly to the internet. It's for administrative access.
+
+- **AD Server**: Active Directory server for identity management, authentication, and authorization across the system.
+
+The exercise focuses on calculating VM costs for the Web Tier and completing the Business Tier table. Specs for the Web Tier aren't provided in a table, so we'll assume they are similar to the Business Tier's VM1/VM2 (based on typical setups: 4 cores, 7 GB RAM, 285 GB disk, Standard S4 data disk, Ubuntu OS). There appear to be two VMs in the Web Tier. If your instructor provides different specs, adjust accordingly.
+
+## Quick Introduction to Azure Pricing
+Azure is a cloud platform where you rent computing power and storage, like borrowing a supercomputer from Microsoft. The Azure Pricing Calculator helps estimate costs based on your configurations (e.g., VM size, OS, disks) to avoid surprises. Prices are pay-as-you-go, vary by region (use UK South as per your location), and are in GBP (£). We'll use approximate 2025 prices here, but run the calculator yourself for accuracy.
+
+## Step-by-Step Guide: Using the Azure Pricing Calculator
+Follow these steps to calculate costs. This process applies to both tiers—repeat for each VM.
+
 ### Step 0 — Understand the Purpose
-When you create an app (e.g., a game or website), it needs a computer on the internet, called a virtual machine (VM). The Azure Pricing Calculator helps you estimate the monthly cost of renting a VM to avoid unexpected bills. Your lab requires using the calculator to complete the Business-tier table.
+VMs are virtual computers in the cloud for running apps. The calculator estimates monthly rental costs based on specs like CPU, RAM, OS, and disks. Your lab requires this for the Web and Business Tiers to plan budgets. Export to Excel for submission.
 
 ### Step 1 — Open the Azure Pricing Calculator
-- **What to do**: Search “Azure Pricing Calculator” in a web browser and open the Microsoft page. You’ll see a page listing Azure products with a search box for “Virtual Machines.”
-- **Why**: This tool converts VM specifications (CPU, RAM, disk, OS) into a monthly price.
+- **What to do**: In a web browser, go to [https://azure.microsoft.com/en-gb/pricing/calculator/](https://azure.microsoft.com/en-gb/pricing/calculator/). You'll see a list of products with a search box.
+- **Why**: This free tool simulates costs without creating resources.
 
 ### Step 2 — Set Region and Currency
-- **What to do**: Find the Region/Currency controls (usually top-right). Set Region to UK South and Currency to GBP (£) if not already set.
-- **Why**: Prices vary by region. The lab specifies UK South, overriding the default East US.
+- **What to do**: At the top, set Region to "UK South" and Currency to "British Pound (£)" if not default.
+- **Why**: Prices differ by location (UK South is closer to you, potentially cheaper/low-latency). Lab overrides default (East US).
 
-### Step 3 — Add a Virtual Machine Product Card
-- **What to do**: In the product picker, type “Virtual Machines” and click Add. A VM configuration box will appear on the right.
-- **Why**: This card lets you specify the machine type, operating system, disk size, and quantity.
+### Step 3 — Add Virtual Machines
+- **What to do**: Search for "Virtual Machines" and click "Add". A configuration card appears.
+- **Why**: This lets you define VM details.
 
-### Step 4 — Configure VM Details
-For each VM (VM1, VM2, VM3, VM4) in the lab’s table, set:
-- **A. Region**: UK South.
-- **B. Operating System**: VM1–VM3 = Ubuntu (Linux), VM4 = Windows (per lab).
-- **C. Instance Size**: Choose an instance matching the lab’s cores and RAM (e.g., 4 cores/~7 GB RAM = select 4 vCPUs, ~7–8 GB RAM instance). If the exact name (e.g., “S4”) isn’t available, pick a modern equivalent.
-- **D. Quantity**: Set to 1 for “x1” or 2 for “x2” (e.g., VM3’s “S70 x2” means two VMs, so quantity = 2).
-- **Why**: These settings determine the compute cost based on instance, OS, and quantity.
+### Step 4 — Configure VM Details (Repeat for Each VM)
+- **Region**: UK South.
+- **Operating System**: Linux (Ubuntu) for most; Windows for VM4.
+- **Type**: Pay as you go (default for lab).
+- **VM Size/Instance**: Select a match, e.g., "F4s v2" (4 vCPUs, 8 GB RAM) for 4 cores/~7 GB. Use "F8s v2" (8 vCPUs, 16 GB) for VM4. Filter by "Compute optimized" > "Fsv2-series".
+- **Quantity**: 1 (or 2 for VM3 if "x2" means two instances).
+- **Why**: Matches lab specs for accurate compute cost (CPU/RAM/OS).
 
 ### Step 5 — Add Disks
-- **What to do**: In the VM card, open the Disks section. Select Standard SSD (or lab-specified type) and set disk size to 285 GB for rows listing “285 GB ×1.”
-- **Why**: Disks are priced separately from CPU/RAM, and the lab specifies disk sizes.
+- **What to do**: In the card, expand "Disks". For OS Disk: Standard SSD, size 285 GB (or closest; type custom size). For Data Disk: Add disk (e.g., Standard HDD, S4 32 GB for VM1/VM2; two S70 16 TB for VM3; Standard SSD E3 16 GB for VM4).
+- **Why**: Disks are separate costs. Lab specifies sizes/types. Standard HDD is cheaper but slower; SSD faster.
 
-### Step 6 — Review the Estimate
-- **What to do**: Check the right-hand estimate pane for the monthly cost of each VM and the total.
-- **Why**: This shows the per-VM and overall costs based on your settings.
+### Step 6 — Review Estimate
+- **What to do**: See the right pane for hourly/monthly breakdown (assumes 730 hours/month).
+- **Why**: Shows total per VM. Add items for multiple VMs.
 
 ### Step 7 — Export to Excel
-- **What to do**: In the estimate pane, click Export → Excel (or CSV) to download a spreadsheet with VM details and costs.
-- **Why**: The lab requires submitting this Excel file to show your settings and prices.
+- **What to do**: Click "Export" > "Excel" in the estimate pane.
+- **Why**: Lab requires this file to verify your configs and prices.
 
 ### Step 8 — Safety Tips
-- If creating VMs in the Azure portal (not calculator), turn them off when not in use to avoid burning credits or money.
-- Calculator estimates are safe—they don’t create real VMs, only plan costs.
+- Calculator is simulation-only—no charges.
+- If deploying real VMs later, shut them down when unused to save credits (lab warns about this).
+- Use free tier services where possible for coursework.
 
 ## Example Cost Calculation
-If the calculator shows a VM compute price of £0.20/hour:
-- Azure uses 730 hours/month (24 hours × ~30.4 days).
-- Hourly × 730 = Monthly:  
-  £0.20 × 700 = £140.00  
-  £0.20 × 30 = £6.00  
-  Total = £146.00/month for compute (add disk cost from estimate).
-- **Note**: If the calculator shows a monthly price, use it directly—this math explains the hourly-to-monthly conversion.
+If compute is £0.14/hour: Monthly = £0.14 × 730 ≈ £102. Add disks (e.g., 285 GB SSD ≈ £21). This explains hourly to monthly conversion.
 
-## Checklist for Lab Submission
-- Open Azure Pricing Calculator.
-- Set Region = UK South, Currency = GBP.
-- Add Virtual Machines item.
-- For each VM: set OS, instance size (e.g., 4 cores = 4 vCPUs), disk = 285 GB, quantity.
-- Check estimate pane for monthly cost.
-- Export to Excel and attach to coursework.
-
-## Estimated Costs for Business Tier
-The provided markdown file serves as a detailed step-by-step guide for using the Azure Pricing Calculator to estimate costs for the Business Tier VMs in the lab exercise. However, it does not fully address all aspects of the lab questions:
-
-- **Q1 (Web Tier costs)**: The lab explicitly asks to "Calculate Web Tier VM machine cost for all VM." The markdown does not cover this—it focuses only on the Business Tier table. Based on the lab diagram (visible in the attached images and referenced on page 10 of the PDF), the Web Tier appears to involve similar VMs (likely with their own specs, such as 2-4 VMs with comparable CPU/RAM/disk configurations), but no specific table is provided in the PDF for Web Tier. You would need to apply the same process from the markdown to calculate those costs separately using the pricing calculator. If the Web Tier specs aren't detailed in your lab materials, assume similar configurations to Business Tier or check with your instructor.
-
-- **Business Tier table**: The markdown explains how to fill this out but does not provide actual numerical costs in the table (e.g., upfront and monthly $ values for each VM). It teaches the method, including exporting to Excel, but you'll need to run the calculator yourself to get current numbers, as prices fluctuate (e.g., due to region, date, or Azure updates). As of September 23, 2025, here are approximate pay-as-you-go estimates for UK South region in GBP (based on public pricing data; use the calculator for precision, assuming F4s v2 for 4 vCPU/8 GB equivalents and F8s v2 for 8 vCPU/16 GB, 730 hours/month, Standard SSD for OS disks, and LRS redundancy):
-
-  | Business Tier | CPU     | Memory   | Disk          | Data Disk             | OS Type | Upfront Cost (£) | Monthly Cost (£) |
-  |---------------|---------|----------|---------------|-----------------------|---------|------------------|------------------|
-  | VM1          | 4 Cores | 7 GB RAM | 285 GB x1    | Standard – S4 (32 GB) | Ubuntu  | 0                | ~123 (compute ~102 + OS disk ~21 + data disk ~0) |
-  | VM2          | 4 Cores | 7 GB RAM | 285 GB x1    | Standard – S4 (32 GB) | Ubuntu  | 0                | ~123 (same as VM1) |
-  | VM3          | 4 Cores | 7 GB RAM | 285 GB x1    | Standard – S70 x2 (16 TB each) | Ubuntu | 0 | ~483 (compute ~102 + OS disk ~21 + data disks ~360) |
-  | VM4          | 8 Cores | 16 GB RAM | 0 (assume minimal/default ~64 GB) | Standard SSD – E3 (16 GB) | Windows | 0 | ~293 (compute ~292 + OS disk ~0 + data disk ~1) |
-
-  *Notes on estimates*: 
-  - Compute: Linux VMs ~£0.14/hour (~£102/month); Windows ~£0.40/hour (~£292/month).
-  - Disks: Standard HDD billed on provisioned space (~£0.011/GB/month). Standard SSD ~£0.072/GB/month. 285 GB OS disk priced as custom size. S70 (16 TB) ~£180/month each. These are rough—Azure bills prorated hourly, and Standard HDD uses provisioned size.
-  - Total may vary with exact instance choice (e.g., no exact 7 GB match, so used ~8 GB), taxes, or promotions. Export from calculator for submission.
-
-- **Export to Excel**: The markdown covers this step well—it's required for the lab submission to show your work.
-
-- **Other lab elements**: The markdown is focused on the pricing exercise and doesn't cover the full lab, such as creating the Azure Student Account (Steps 1-7), reading the articles on cost management (Step 8), or taking the Azure Fundamentals course (recommended in Step 7). If your coursework requires evidence of those (e.g., screenshots or notes), they're not included.
-
-In summary, the markdown answers the Business Tier part of the exercise effectively as a tutorial, but to fully complete the lab, you'll need to:
-1. Calculate and document Web Tier costs similarly (if specs are available).
-2. Run the pricing calculator to fill in/extract actual current costs for both tiers.
-3. Submit the exported Excel file(s) as specified.
-
-## Estimated Costs for Web Tier
-The lab asks to calculate the Web Tier VM machine cost for all VM, but does not provide a table with specifications like for the Business Tier. Based on the diagram, the Web Tier appears to have two VMs behind a load balancer. Assuming each has similar specifications to VM1 (4 Cores, 7 GB RAM, 285 GB disk, Standard S4 data disk, Ubuntu), the individual cost would be the same as VM1, and the total for the Web Tier would be 2 × £123 = £246 per month.
-
-If the specs are different, adjust accordingly in the calculator.
+## Completing the Exercise: Web Tier Costs
+The lab asks to calculate costs for all Web Tier VMs. No table provided, but diagram shows two VMs. Assuming specs like Business Tier VM1 (4 Cores, 7 GB RAM, 285 GB x1 Disk, Standard S4 Data Disk, Ubuntu):
 
 | Web Tier | CPU     | Memory   | Disk          | Data Disk             | OS Type | Upfront Cost (£) | Monthly Cost (£) |
-  |----------|---------|----------|---------------|-----------------------|---------|------------------|------------------|
-  | VM1      | 4 Cores | 7 GB RAM | 285 GB x1    | Standard – S4 (32 GB) | Ubuntu  | 0                | ~123 |
-  | VM2      | 4 Cores | 7 GB RAM | 285 GB x1    | Standard – S4 (32 GB) | Ubuntu  | 0                | ~123 |
-  | Total    |         |          |               |                       |         | 0                | ~246 |
+|----------|---------|----------|---------------|-----------------------|---------|------------------|------------------|
+| VM1      | 4 Cores | 7 GB RAM | 285 GB x1    | Standard – S4 (32 GB) | Ubuntu  | 0                | ~123 (compute ~102 + OS disk ~21 + data disk ~0) |
+| VM2      | 4 Cores | 7 GB RAM | 285 GB x1    | Standard – S4 (32 GB) | Ubuntu  | 0                | ~123 (same as VM1) |
+| Total    |         |          |               |                       |         | 0                | ~246 |
+
+## Completing the Exercise: Business Tier Costs
+Use the lab's table. Fill in costs using the steps above.
+
+| Business Tier | CPU     | Memory   | Disk          | Data Disk             | OS Type | Upfront Cost (£) | Monthly Cost (£) |
+|---------------|---------|----------|---------------|-----------------------|---------|------------------|------------------|
+| VM1          | 4 Cores | 7 GB RAM | 285 GB x1    | Standard – S4 (32 GB) | Ubuntu  | 0                | ~123 (compute ~102 + OS disk ~21 + data disk ~0) |
+| VM2          | 4 Cores | 7 GB RAM | 285 GB x1    | Standard – S4 (32 GB) | Ubuntu  | 0                | ~123 (same as VM1) |
+| VM3
