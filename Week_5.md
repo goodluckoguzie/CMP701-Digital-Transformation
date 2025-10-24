@@ -1,4 +1,3 @@
-<p align="right">**Options:** [Edit](#edit) · [Download](#download) · [Copy](#copy) · [Print](#print)</p>
 
 # CMP701 - Lab 05: Questions and Answers for Groups
 **Date:** March 06, 2025
@@ -59,19 +58,3 @@
 
 5. **Q:** If Google Cloud delays sensor data processing during rollout, how would you adapt to hit the $42.5M cost savings target, and what contingency technologies might you consider?  
    **A:** Use local servers ($1M) for interim processing, aim for 450 hrs downtime, $45M costs. Switch to AWS if delays persist ($1.5M). Outcome: $42.5M met with $500K extra AI tuning; AWS as contingency.
-
----
-
-## Options
-
-### Edit
-Open this file in any Markdown editor (VS Code, Obsidian, Typora, StackEdit). Make your changes and save.
-
-### Download
-If you’re viewing this in a browser or Markdown app, use **File → Save As…** to download as `.md`. Some apps also export to **HTML/PDF**.
-
-### Copy
-Select all and copy, or use your viewer’s **Copy** button if available.
-
-### Print
-Most Markdown apps/browsers let you **Print** (or **Save as PDF**) from the menu with `Ctrl/Cmd + P`.
