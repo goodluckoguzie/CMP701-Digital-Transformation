@@ -25,11 +25,11 @@ This repository contains comprehensive course materials, practical labs, and res
 
 ### 📑 Weekly Content
 1. [Week 1: Cloud as a Platform for Digital Transformation](#week-1)
-2. [Week 2: [Coming Soon]](#week-2)
+2. [Week 2: Cloud Infrastructure and Services](#week-2)
 3. [Week 3: Data Visualization](#week-3)
-4. [Week 4: [Coming Soon]](#week-4)
+4. [Week 4: Data Analytics and Business Intelligence](#week-4)
 5. [Week 5: Advanced Topics](#week-5)
-6. [Week 6: [Coming Soon]](#week-6)
+6. [Week 6: Digital Technologies and Innovation](#week-6)
 7. [Week 7: Business Models](#week-7)
 8. [Week 8: Digital Business Models & Strategy](#week-8)
 9. [Week 9: RapidMiner Lab](#week-9)
@@ -80,11 +80,16 @@ The course is organized into weekly modules, each containing:
 ---
 
 ### Week 2
-**Coming Soon**
+**Cloud Infrastructure and Services**
 
-📄 [Placeholder →](week-02-placeholder.md)
+📄 [View Full Content →](week-02-placeholder.md)
 
-**Status:** Content will be added soon
+**Topics Covered:**
+- Cloud service models (IaaS, PaaS, SaaS)
+- Cloud infrastructure components
+- Cloud service provider comparison
+- Cloud architecture patterns
+- Cost optimization strategies
 
 ---
 
@@ -102,11 +107,16 @@ The course is organized into weekly modules, each containing:
 ---
 
 ### Week 4
-**Coming Soon**
+**Data Analytics and Business Intelligence**
 
-📄 [Placeholder →](week-04-placeholder.md)
+📄 [View Full Content →](week-04-placeholder.md)
 
-**Status:** Content will be added soon
+**Topics Covered:**
+- Data analytics lifecycle
+- Types of analytics (descriptive, diagnostic, predictive, prescriptive)
+- Business intelligence tools
+- Data-driven decision making
+- KPIs and metrics for digital transformation
 
 ---
 
@@ -123,11 +133,17 @@ The course is organized into weekly modules, each containing:
 ---
 
 ### Week 6
-**Coming Soon**
+**Digital Technologies and Innovation**
 
-📄 [Placeholder →](week-06-placeholder.md)
+📄 [View Full Content →](week-06-placeholder.md)
 
-**Status:** Content will be added soon
+**Topics Covered:**
+- Artificial Intelligence and Machine Learning
+- Internet of Things (IoT)
+- Blockchain and distributed ledger technology
+- Automation and robotics
+- Cloud-native technologies
+- Technology adoption frameworks
 
 ---
 
