@@ -25,12 +25,15 @@ This repository contains comprehensive course materials, practical labs, and res
 
 ### 📑 Weekly Content
 1. [Week 1: Cloud as a Platform for Digital Transformation](#week-1)
-2. [Week 3: Data Visualization](#week-3)
-3. [Week 5: Advanced Topics](#week-5)
-4. [Week 7: Business Models](#week-7)
-5. [Week 8: Digital Business Models & Strategy](#week-8)
-6. [Week 9: RapidMiner Lab](#week-9)
-7. [Week 10: Digital Transformation Strategy](#week-10)
+2. [Week 2: [Coming Soon]](#week-2)
+3. [Week 3: Data Visualization](#week-3)
+4. [Week 4: [Coming Soon]](#week-4)
+5. [Week 5: Advanced Topics](#week-5)
+6. [Week 6: [Coming Soon]](#week-6)
+7. [Week 7: Business Models](#week-7)
+8. [Week 8: Digital Business Models & Strategy](#week-8)
+9. [Week 9: RapidMiner Lab](#week-9)
+10. [Week 10: Digital Transformation Strategy](#week-10)
 
 </details>
 
@@ -66,7 +69,7 @@ The course is organized into weekly modules, each containing:
 ### Week 1
 **Cloud as a Platform for Digital Transformation**
 
-📄 [View Full Content →](Week1_UseOfCloudAsAplatformforDigitalTransformation.markdown)
+📄 [View Full Content →](week-01-cloud-platform.md)
 
 **Topics Covered:**
 - Cloud computing fundamentals
@@ -76,10 +79,19 @@ The course is organized into weekly modules, each containing:
 
 ---
 
+### Week 2
+**Coming Soon**
+
+📄 [Placeholder →](week-02-placeholder.md)
+
+**Status:** Content will be added soon
+
+---
+
 ### Week 3
 **Data Visualization**
 
-📄 [View Full Content →](Week_3_Visualise_the_data.markdown)
+📄 [View Full Content →](week-03-data-visualization.md)
 
 **Topics Covered:**
 - Data visualization principles
@@ -89,10 +101,19 @@ The course is organized into weekly modules, each containing:
 
 ---
 
+### Week 4
+**Coming Soon**
+
+📄 [Placeholder →](week-04-placeholder.md)
+
+**Status:** Content will be added soon
+
+---
+
 ### Week 5
 **Advanced Topics**
 
-📄 [View Full Content →](Week_5.md)
+📄 [View Full Content →](week-05-advanced-topics.md)
 
 **Topics Covered:**
 - Advanced digital transformation concepts
@@ -101,10 +122,19 @@ The course is organized into weekly modules, each containing:
 
 ---
 
+### Week 6
+**Coming Soon**
+
+📄 [Placeholder →](week-06-placeholder.md)
+
+**Status:** Content will be added soon
+
+---
+
 ### Week 7
 **Business Models**
 
-📄 [View Full Content →](Wk7_business_models.md)
+📄 [View Full Content →](week-07-business-models.md)
 
 **Topics Covered:**
 - Digital business model innovation
@@ -117,8 +147,8 @@ The course is organized into weekly modules, each containing:
 ### Week 8
 **Digital Business Models & Strategy**
 
-📄 [Theory →](week8_Digital_Transformation_&_Strategy.markdown) | 
-📄 [Practical Lab →](Week-8_Practical%20Lab-08_Exploring%20Digital%20Business%20Models.markdown)
+📄 [Theory →](week-08-strategy.md) | 
+📄 [Practical Lab →](lab-08-digital-business-models.md)
 
 **Topics Covered:**
 - Strategic digital transformation
@@ -131,7 +161,7 @@ The course is organized into weekly modules, each containing:
 ### Week 9
 **RapidMiner Lab**
 
-📄 [View Full Content →](week_9_RapidMiner_lab.markdown)
+📄 [View Full Content →](week-09-rapidminer-lab.md)
 
 **Topics Covered:**
 - RapidMiner introduction
@@ -144,7 +174,7 @@ The course is organized into weekly modules, each containing:
 ### Week 10
 **Digital Transformation Strategy**
 
-📄 [View Full Content →](week10_develop_a_digital_transformation_strategy.markdown)
+📄 [View Full Content →](week-10-transformation-strategy.md)
 
 **Topics Covered:**
 - Strategy development frameworks
@@ -158,8 +188,8 @@ The course is organized into weekly modules, each containing:
 
 | Lab | Topic | File | Status |
 |-----|-------|------|--------|
-| Lab 08 | Exploring Digital Business Models | [Week-8_Practical Lab-08](Week-8_Practical%20Lab-08_Exploring%20Digital%20Business%20Models.markdown) | ✅ Available |
-| Lab 09 | RapidMiner Data Mining | [week_9_RapidMiner_lab](week_9_RapidMiner_lab.markdown) | ✅ Available |
+| Lab 08 | Exploring Digital Business Models | [lab-08-digital-business-models](lab-08-digital-business-models.md) | ✅ Available |
+| Lab 09 | RapidMiner Data Mining | [week-09-rapidminer-lab](week-09-rapidminer-lab.md) | ✅ Available |
 
 ---
 

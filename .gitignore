@@ -1,0 +1,51 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# Temporary files
+*.tmp
+*.log
+*.cache
+
+# Personal files
+*.jpg
+*.jpeg
+*.png
+!images/**/*.png
+!images/**/*.jpg
+
+# Build files
+dist/
+build/
+*.pyc
+__pycache__/
+
+# Environment files
+.env
+.env.local
+venv/
+env/
+
+# Node modules (if any)
+node_modules/
+package-lock.json
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Backup files
+*.bak
+*.backup
+*~
+
