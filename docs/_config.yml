@@ -1,0 +1,15 @@
+# Documentation Site Configuration
+
+theme: jekyll-theme-minimal
+title: CMP701 Digital Transformation Docs
+description: Course documentation and resources
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+

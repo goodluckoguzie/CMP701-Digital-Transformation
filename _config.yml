@@ -1,0 +1,52 @@
+# GitHub Pages Configuration for CMP701 Digital Transformation
+
+title: CMP701 - Digital Transformation
+description: Comprehensive course materials for Digital Transformation strategies, cloud computing, and business model innovation
+theme: jekyll-theme-minimal
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: Week 1
+    url: /Week1_UseOfCloudAsAplatformforDigitalTransformation.markdown
+  - title: Week 3
+    url: /Week_3_Visualise_the_data.markdown
+  - title: Week 5
+    url: /Week_5.md
+  - title: Week 7
+    url: /Wk7_business_models.md
+  - title: Week 8
+    url: /week8_Digital_Transformation_&_Strategy.markdown
+  - title: Week 9
+    url: /week_9_RapidMiner_lab.markdown
+  - title: Week 10
+    url: /week10_develop_a_digital_transformation_strategy.markdown
+
+# Author information
+author:
+  name: Dirichukwu Goodluck Oguzie
+  github: goodluckoguzie
+  linkedin: dirichukwu-goodluck-oguzie
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - CMP701-README.md
+  - .git
+  - .gitignore
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# Site settings
+url: https://goodluckoguzie.github.io
+baseurl: /CMP701-Digital-Transformation
+
