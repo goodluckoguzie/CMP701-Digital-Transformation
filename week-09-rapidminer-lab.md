@@ -5,7 +5,7 @@
 
 ---
 
-## 1. Aim of the lab (what we are trying to do)
+## 1. Aim of the lab 
 
 You have Houston weather data recorded **over time** (hourly readings).  
 Your goal is to build a system that can **predict future temperature**.
@@ -24,7 +24,7 @@ Why this order matters:
 
 ---
 
-## 2. Key definitions (simple but correct)
+## 2. Key definitions 
 
 ### 2.1 Time series
 A **time series** is data collected in time order.  
